@@ -382,6 +382,14 @@
 			<artifactId>websquare</artifactId>
 			<version>5.0_4.4547B.20211124.201933_1.5</version>
 		</dependency>
+		
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>2.5</version>
+</dependency>
+
 	</dependencies>
 	<pluginRepositories>
 		<pluginRepository>
