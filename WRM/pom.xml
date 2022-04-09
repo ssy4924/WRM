@@ -7,6 +7,7 @@
 	<name>WebSquare Reference Model</name>
 	<version>5.0.4.RELEASE</version>
 	<packaging>war</packaging>
+
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.3.25.RELEASE</org.springframework-version>
@@ -15,7 +16,7 @@
 		<org.apache.poi-version>3.10-FINAL</org.apache.poi-version>
 	</properties>
 	<dependencies>
-		<!-- Spring Framework-->
+		<!-- Spring Framework -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -28,14 +29,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<!-- Spring Web MVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
+
 		<!-- Spring JDBC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -150,11 +151,11 @@
 			<artifactId>mariadb-java-client</artifactId>
 			<version>2.5.1</version>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>mysql</groupId>
-		    <artifactId>mysql-connector-java</artifactId>
-		    <version>8.0.16</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.16</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -382,6 +383,30 @@
 			<version>5.0_4.4547B.20211124.201933_1.5</version>
 		</dependency>
 	</dependencies>
+
+
+
+	<pluginRepositories>
+		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -419,12 +444,14 @@
 				</configuration>
 			</plugin>
 			<plugin>
-			   <groupId>org.apache.maven.plugins</groupId>
-			   <artifactId>maven-war-plugin</artifactId>
-			   <configuration>
-			    <failOnMissingWebXml>false</failOnMissingWebXml>
-			   </configuration>
-		  </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
+
 </project>
